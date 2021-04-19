@@ -5,13 +5,13 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Shyp Logostics</title>
+        <title>Shyp Logistics</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
         <!-- Favicons -->
         <link href="assets/img/favicon.png" rel="icon">
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -23,9 +23,54 @@
         <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
         <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
+
+
+        <style>
+            * {
+                box-sizing: border-box;
+                }
+
+                /* Float three columns side by side */
+                .column {
+                float: left;
+                width: 30%;
+                padding: 1.5%;
+                }
+
+                .row {margin: 0 -5px;}
+
+                /* Clear floats after the columns */
+                .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+
+                /* Responsive columns */
+                @media screen and (max-width: 600px) {
+                .column {
+                    width: 30%;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                }
+
+                /* Style the counter cards */
+                .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                text-align: center;
+                background-color: #444;
+                color: white;
+                }
+            </style>
+
+
+
     </head>
 
     <body>
@@ -49,7 +94,7 @@
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact Us</a></li>
 
-                <li class="get-started"><a href="#about">Login</a></li>
+                <li class="get-started"><a href="pages/login.html">Login</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -263,9 +308,32 @@
             </div>
             </section><!-- End Features Section -->
 
-           
+           <section id="counters"  class="counters counters-bg">
+            <div class="container">
 
-           
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <h3><span id="Shipments">0</span>+</h3>
+                    <h3>Shipments</h3>
+                  </div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="column">
+                  <div class="card">
+                    <h3><span id="Clients">0</span>+</h3>
+                    <h3>Happy Clients</h3>
+                  </div>
+                </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="column">
+                    <div class="card">
+                      <h3><span id="Partners">0</span>+</h3>
+                      <h3>Partners</h3>
+                    </div>
+                  </div>
+            </div>
+</div>
+            
+            </section>
 
           
 
@@ -444,7 +512,7 @@
         <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
         <script src="assets/vendor/venobox/venobox.min.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
-
+        <script src="assets/js/counter.js"></script>
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
 
